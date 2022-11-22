@@ -1,0 +1,103 @@
+* {
+	box-sizing: border-box;
+}
+.titulo {
+	color: purple;
+	transition: all .5s ease-in;
+}
+
+.titulo:hover {
+	background-color: green;
+}
+
+p:not(.meio) {
+	color: gold;
+}
+
+.lista_item a {
+	color: darkorange;
+	transition: all .2s ease-in-out;
+}
+
+.lista_item a:hover {
+	color: red;
+	text-decoration-color: green;
+}
+
+/*.lista_item a:visited {
+	color: firebrick;
+}
+*/
+.lista_item a:active {
+	background-color: blue;
+	color: white;
+}
+
+.lista_item:first-child {
+	background-color: yellow;
+}
+
+.lista_item:last-child {
+	background-color: cyan;
+}
+
+.lista_item:nth-child(even) {
+	background-color: red;
+	color: white;
+}
+
+.lista_item:nth-child(odd) {
+	background-color: olive;
+}
+
+.lista_item:nth-child(2) {
+	background-color: red;
+}
+
+.lista_item:nth-child(3n) {
+	background-color: black;
+}
+
+.lista_item:nth-child(3n + 5) {
+	background-color: darkgray;
+}
+
+.input {
+	display: block;
+	margin-bottom: 10px;
+	padding: 5px;
+	width: 250px;
+	border: 1px solid black;
+	border-radius: 2px;
+}
+
+.input:focus {
+	border: 1px solid olive;
+	outline: none;
+}
+
+.input:disabled {
+	border-color: red;
+	background-color: darkgray;
+	cursor: not-allowed;
+}
+
+.botao {
+	color: white;
+	padding: 10px;
+	width: 100px;
+	border: 1px solid olive;
+	background-color: darkgreen;
+	transition: all .4s ease-in-out;
+	cursor: pointer;
+}
+
+.botao:hover {
+	background-color: white;
+	color: darkgreen;
+}
+
+.check:checked + h1 {
+	background-color: purple;
+	color: white;
+}

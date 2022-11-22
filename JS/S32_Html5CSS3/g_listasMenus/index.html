@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Listas e Menus</title>
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		nav {
+		
+			background: #cb4154;
+			display: flex;
+			align-items: center;
+			
+			
+		}
+
+		nav ul {
+			list-style: none;
+			display: flex;
+			width: 50%;
+			margin: 0 auto;
+			justify-content: space-between;
+			
+		}
+
+		nav ul li a {
+			color: white;
+			background: red;
+			text-decoration: none;
+			font-family: sans-serif;
+			padding: 20px;
+			display: block;
+		}
+
+		nav a:hover {
+			background: rgba(0, 0, 0, .3);
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Products</a></li>
+		</ul>
+	</nav>
+
+	<ul>
+		<li>Lorem ipsum dolor, sit amet.</li>
+		<li>Iste optio accusantium rerum non.</li>
+		<li>Soluta iste dignissimos reprehenderit distinctio!</li>
+	</ul>
+
+	<ol type='I' start='555'>
+		<li>Lorem ipsum dolor, sit amet.</li>
+		<li>Adipisci soluta libero laboriosam asperiores.</li>
+		<li>Qui similique, quam quaerat numquam!</li>
+	</ol>
+	<!--
+		dl - description list
+		dt - defines a term
+		dd - describes the term in a dl
+	-->
+	<dl>
+		<dt>Café</dt>
+		<dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, maxime.</dd>
+	</dl>
+</body>
+</html>

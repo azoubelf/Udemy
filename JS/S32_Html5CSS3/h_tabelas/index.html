@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tabelas</title>
+
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 90%;
+			margin: 0 auto;
+		}
+		td, th {
+			border: 1px solid #ccc;
+			padding: 5px;
+			text-align: left;
+		}
+
+		table caption {
+			text-align: left;
+			font-style: italic;
+			font-size: 18px;
+			margin-bottom: 5px
+		}
+
+		tfoot {
+			background: #ddd;	
+		}
+
+		tfoot td {
+			text-align: center;
+		}
+
+		.responsive-table {
+			max-width: 100%;
+			overflow: auto;
+		}
+
+	</style>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, sit.</p>
+
+	<table class="responsive-table">
+		<caption>Descrição para a tabela</caption>
+		<thead>
+			<tr>
+				<th>Título 01</th>
+				<th>Título 02</th>
+				<th>Título 03</th>
+				<th>Título 04</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Lorem ipsum dolor, sit amet.</td>
+				<td>Lorem ipsum dolor, sit amet.</td>
+				<td>Lorem ipsum dolor, sit amet.</td>
+				<td>Lorem ipsum dolor, sit amet.</td>
+			</tr>
+			<tr>
+				<td colspan="2" rowspan="2">Lorem ipsum dolor, sit amet.</td>
+				<td>Lorem ipsum dolor, sit amet.</td>
+				<td>Lorem ipsum dolor, sit amet.</td>
+				
+			</tr>
+			<tr>
+				<td>Lorem ipsum dolor, sit amet.</td>
+				<td>Lorem ipsum dolor, sit amet.</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="4">Opa</td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>

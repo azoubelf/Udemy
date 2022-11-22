@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulários</title>
+	<style>
+		body {
+			font-family: sans-serif;
+		}
+
+		input[type="text"],
+		input[type="email"],
+		input[type="number"],
+		input[type="password"],
+		input[type="url"],
+		input[type="search"] {
+			width: 220px;
+			padding: 5px;
+		}
+		label {
+			cursor: pointer;
+			display: block;
+		}
+		.genero-radio label,
+		.checkbox-input label {
+			display: inline-block;
+		}
+
+		.botoes {
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<form action="#" method="get" target="_blank" autocomplete="off">
+		<section>
+			<h1>Cabeça</h1>
+			<p>O formulário</p>
+			<fieldset>
+				<legend>Descrição</legend>
+				<p>
+					<label for="nome">Nome</label>
+					<input type="text" id="nome" name="nome" placeholder="Digite seu nome" required="">
+				</p>
+				<p>
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" placeholder="seuemail@mail.com" required="">
+				</p>
+				<p>
+					<label for="password">Senha</label>
+					<input type="password" id="password" name="password" placeholder="Digite sua senha">
+				</p>
+				<p>
+					<label for="number">Número</label>
+					<input type="number" id="number" name="number" placeholder="Digite um número" min="0" max="10" step="0.5">
+				</p>
+				<p>
+					<label for="url">URL</label>
+					<input type="url" id="url" name="url" placeholder="Digite uma URL">
+				</p>
+				<p>
+					<label for="search">Pesquisa</label>
+					<input type="search" id="search" name="search" placeholder="Pesquise">
+				</p>
+				<p>
+					<label for="cor">Cor</label>
+					<input type="color" id="cor" name="cor" value="#ff0000">
+				</p>
+				<p>
+					<label for="select">Selecione uma opção</label>
+					<select name="select" id="select">
+						<optgroup label="Cores">
+							<option value="azul" label="Azul">
+							<option value="vermelho" label="Vermelho" selected>
+							<option value="verde" label="Verde">
+							<option value="amarelo" label="Amarelo">
+							<option value="rosa" label="Rosa">	
+						</optgroup>
+						
+					</select>
+				</p>
+
+
+				<p class="checkbox-input">					
+					<input type="checkbox" id="dev" name="dev" value="sim" checked>
+					<label for="dev">Sou dev</label><br>
+					
+					<input type="checkbox" id="estudante" name="estudante" value="sim"d>
+					<label for="estudante">Sou estudante</label>
+				</p>
+
+				<p>Gênero</p>
+				<div class="genero-radio">
+					<label for="feminino">Feminino</label>
+					<input type="radio" name="genero" id="feminino" value="feminino"><br>
+					<label for="masculino">Masculino</label>
+					<input type="radio" name="genero" id="masculino" value="masculino"><br>
+					<label for="outro">Outro</label>
+					<input type="radio" name="genero" id="outro" value="outro">	
+				</div>
+				
+				<p>
+					<label for="date">Data</label>
+					<input type="date" id="date" name="date" value="2022-07-01">
+				</p>
+				<p>
+					<label for="time">Hora</label>
+					<input type="time" id="time" name="time" value="15:32:03">
+				</p>
+
+				<p>
+					<label for="file">Enviar um arquivo</label>
+					<input type="file" name="file" id="file" accept=".png,.svg,image/*" multiple="">
+				</p>
+
+				<p>
+					<label for="textarea">Textarea</label>
+					<textarea name="textare" id="textearea" cols="30" rows="10"></textarea>
+				</p>
+
+				<div class="botoes">
+					<button type="submit">Enviar</button>
+					<button type="reset">Reset</button>	
+				</div>
+				
+			</fieldset>
+		</section>
+
+		
+	</form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+ul li::after {
+	content: '  :3';
+	background: red;
+	color: white;
+}
+
+ul li::before {
+	content: '=O~';
+	background: blue;
+	color: olive;
+}
+
+p::first-letter {
+	font-size: 2em;
+	color: purple;
+	font-weight: bold;
+}
+
+p::first-line {
+	background: cyan;
+}
+
+p::selection {
+	background-color: black;
+	color: olive;
+}
+
+input::placeholder {
+	font-style: italic;
+	color: olive;
+}

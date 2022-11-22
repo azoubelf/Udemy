@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.pai p+h1 {
+	color: yellow;
+}
+
+.pai h1~p {
+	color: purple;
+}
+.pai h1+p {
+	color: red;
+}
+
+[meu-atributo] {
+	text-decoration: underline;
+	text-decoration-color: blue;
+}
+
+[meu-atributo="b"] {
+	text-decoration: underline;
+	text-decoration-color: purple;	
+}
+
+[atributo~="valor"] {
+	font-weight: bold;
+}
+
+[atributo|="valor"] {
+	font-style: italic;
+}
+
+[atributo^="va"]{
+	font-size: 1.5em;
+}
+
+[atributo$="-a"] {
+	text-decoration: line-through;
+	text-decoration-color: gray;
+}
+
+[atributo*="-b"] {
+	text-decoration: underline;
+	text-decoration-color: green;
+}

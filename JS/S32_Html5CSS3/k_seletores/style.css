@@ -1,0 +1,57 @@
+/* --- Seleciona tudo --- */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* --- Seleciona por tag --- */
+p {
+	color: red;
+
+}
+
+/* --- Seleciona por descendente --- */
+body div section p,
+body div section h1{
+	color: blue;
+	margin-bottom: 10px;
+}
+
+div {
+	margin-left: 20px;
+}
+/* 
+	Seleciona por classe
+	E elemento por classe
+*/
+.secao_louca p {
+	color: purple;
+}
+
+.subtitulo {
+	color: gold;
+}
+
+.secao_louca .cor-verde {
+	color: green;
+	font-style: italic;
+}
+
+.secao_louca h3.cor-verde  {
+	text-decoration: underline;
+}
+
+.pai {
+	color: red;
+}
+
+.filha {
+	color: initial;
+}
+
+/* --- Child selector --- */
+/* --- Seleciona os filhos diretos --- */
+.pai > .filha > .filha {
+	color: cyan;
+}
